@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E-Commerce Test Automation Suite" parallel="false" thread-count="1">
+    
+    <parameter name="browser" value="chrome"/>
+    
+    <listeners>
+        <!-- Add custom listeners here if needed -->
+    </listeners>
+    
+    <test name="E-Commerce Functional Tests" preserve-order="true">
+        <classes>
+            <!-- Mandatory Tests -->
+            <class name="com.automation.tests.UserRegistrationTest">
+                <methods>
+                    <include name="testUserRegistration"/>
+                </methods>
+            </class>
+            
+            <class name="com.automation.tests.UserLoginTest">
+                <methods>
+                    <include name="testUserLogin"/>
+                </methods>
+            </class>
+            
+            <class name="com.automation.tests.ProfileDataValidationTest">
+                <methods>
+                    <include name="testProfileDataValidation"/>
+                </methods>
+            </class>
+            
+            <class name="com.automation.tests.AddProductsToCartTest">
+                <methods>
+                    <include name="testAddProductsToCart"/>
+                </methods>
+            </class>
+            
+            <class name="com.automation.tests.CartTotalPriceValidationTest">
+                <methods>
+                    <include name="testCartTotalPriceValidation"/>
+                </methods>
+            </class>
+            
+            <class name="com.automation.tests.PagePerformanceTest">
+                <methods>
+                    <include name="testPagePerformance"/>
+                </methods>
+            </class>
+            
+            <class name="com.automation.tests.CompanyInfoScrapingTest">
+                <methods>
+                    <include name="testCompanyInfoScraping"/>
+                </methods>
+            </class>
+            
+            <!-- Additional Bonus Tests -->
+            <class name="com.automation.tests.SearchFunctionalityTest">
+                <methods>
+                    <include name="testSearchFunctionality"/>
+                </methods>
+            </class>
+            
+            <class name="com.automation.tests.LogoutTest">
+                <methods>
+                    <include name="testLogout"/>
+                </methods>
+            </class>
+            
+            <class name="com.automation.tests.NavigationTest">
+                <methods>
+                    <include name="testNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>

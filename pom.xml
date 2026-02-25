@@ -36,25 +36,25 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- WebDriverManager for automatic driver management -->
+        <!-- WebDriverManager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.6.3</version>
+            <version>5.5.1</version>
         </dependency>
 
-        <!-- Apache Commons IO for file operations -->
+        <!-- ExtentReports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.1.1</version>
+        </dependency>
+
+        <!-- Commons IO -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.15.1</version>
-        </dependency>
-
-        <!-- Apache Commons Lang for utilities -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.14.0</version>
+            <version>2.11.0</version>
         </dependency>
     </dependencies>
 

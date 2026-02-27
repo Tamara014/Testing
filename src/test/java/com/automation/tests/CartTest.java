@@ -16,7 +16,7 @@ public class CartTest extends BaseTest {
         InventoryPage inventoryPage = new InventoryPage(driver);
         inventoryPage.addProductToCart(0);
         inventoryPage.addProductToCart(1);
-        Assert.assertTrue(inventoryPage.getCartItemCount() == 2, "Cart item count mismatch after adding products.");
+        Assert.assertTrue(inventoryPage.getCartItemCount() == 2, "Broj proizvoda u korpi nije ispravan nakon dodavanja.");
     }
 
     @Test(description = "Remove products from cart")
@@ -30,6 +30,6 @@ public class CartTest extends BaseTest {
         inventoryPage.addProductToCart(0);
         inventoryPage.addProductToCart(1);
         inventoryPage.removeProductFromCart(0);
-        Assert.assertTrue(inventoryPage.getCartItemCount() == 1, "Cart item count mismatch after removing product.");
+        Assert.assertTrue(inventoryPage.getCartItemCount() == 1, "Broj proizvoda u korpi nije ispravan nakon uklanjanja proizvoda.");
     }
 }

@@ -12,7 +12,7 @@ public class LoginTest extends BaseTest {
         loginPage.enterUsername("standard_user");
         loginPage.enterPassword("secret_sauce");
         loginPage.clickLogin();
-        Assert.assertTrue(driver.getCurrentUrl().contains("inventory.html"), "Login failed or inventory page not loaded.");
+        Assert.assertTrue(driver.getCurrentUrl().contains("inventory.html"), "Prijava nije uspela ili stranica inventara nije učitana.");
     }
 
     @Test(description = "Invalid login")
@@ -22,6 +22,6 @@ public class LoginTest extends BaseTest {
         loginPage.enterUsername("invalid_user");
         loginPage.enterPassword("wrong_password");
         loginPage.clickLogin();
-        Assert.assertTrue(loginPage.getErrorMessage().contains("Epic sadface"), "Error message not shown for invalid login.");
+        Assert.assertTrue(loginPage.getErrorMessage().contains("Epic sadface"), "Poruka o grešci nije prikazana za neispravnu prijavu.");
     }
 }

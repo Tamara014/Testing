@@ -1,0 +1,24 @@
+# Test Automation Project - Selenium & TestNG
+
+## Kratak opis projekta
+Ovaj projekat je automatizovani testni framework za web aplikaciju, razvijen u Javi koristeći Selenium WebDriver, TestNG i Page Object Model (POM) sa Page Factory dizajn paternom. Cilj je automatsko testiranje osnovnih funkcionalnosti korisničkog naloga, korpe, checkout procesa i performansi sajta.
+
+## Pokrivene funkcionalnosti
+1. **Registracija korisnika** - Testira se uspešna registracija i provera podataka na profilu.
+2. **Prijava korisnika** - Testira se uspešna i neuspešna prijava.
+3. **Provera profila** - Upoređuju se podaci sa registracije i podaci na profilu.
+4. **Dodavanje/uklanjanje proizvoda u korpu** - Testira se dodavanje i uklanjanje proizvoda iz različitih kategorija.
+5. **Provera ukupne cene** - Testira se ispravnost ukupne cene u korpi tokom checkout procesa.
+6. **Performanse stranica** - Merenje vremena otvaranja različitih stranica i izračunavanje proseka.
+7. **Test izveštaj** - Automatski generisan TestNG HTML izveštaj o uspešnosti testova.
+
+## Struktura projekta
+- `src/main/java/com/automation/pages/` - Page Object klase (Login, Registration, Profile, Inventory, Cart, Checkout)
+- `src/test/java/com/automation/tests/` - TestNG test klase za svaku funkcionalnost
+- `src/main/java/com/automation/utils/` - Pomoćne klase (DriverFactory, WaitUtils, Logger, ScreenshotUtils, PerformanceUtils)
+- `test-output/` - Automatski generisani izveštaji nakon pokretanja testova
+
+## Pokretanje testova
+Testovi se pokreću pomoću TestNG-a (testng.xml) ili direktno iz IDE-a. Nakon izvršavanja, rezultati su dostupni u `test-output/` folderu.
+
+

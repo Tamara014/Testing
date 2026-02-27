@@ -10,6 +10,6 @@ public class PerformanceTest extends BaseTest {
         driver.get("https://www.saucedemo.com/");
         long loadTime = PerformanceUtils.getPageLoadTime(driver);
         System.out.println("Page Load Time: " + loadTime + " ms");
-        Assert.assertTrue(loadTime > 0, "Page load time should be positive.");
+        Assert.assertTrue(loadTime > 0, "Vreme učitavanja stranice mora biti pozitivno.");
     }
 }

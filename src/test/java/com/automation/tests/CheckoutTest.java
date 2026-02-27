@@ -27,7 +27,7 @@ public class CheckoutTest extends BaseTest {
         checkoutPage.enterPostalCode("12345");
         checkoutPage.clickContinue();
         String totalLabel = checkoutPage.getTotalLabel();
-        Assert.assertTrue(totalLabel.contains("Total"), "Total label not found.");
+        Assert.assertTrue(totalLabel.contains("Total"), "Ukupna cena nije pronađena.");
     }
 
     @Test(description = "Complete checkout process")
@@ -48,6 +48,6 @@ public class CheckoutTest extends BaseTest {
         checkoutPage.enterPostalCode("12345");
         checkoutPage.clickContinue();
         checkoutPage.clickFinish();
-        Assert.assertTrue(checkoutPage.getCompleteHeader().contains("THANK YOU"), "Checkout not completed successfully.");
+        Assert.assertTrue(checkoutPage.getCompleteHeader().contains("THANK YOU"), "Kupovina nije uspešno završena.");
     }
 }
